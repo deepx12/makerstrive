@@ -336,7 +336,7 @@ export const StoryAnimation = () => {
                 (Math.random() - 0.5) * 80,
                 (Math.random() - 0.5) * 80
             ],
-            scale: 0.5 + Math.random() * 1.5
+            scale: 0.2 + Math.random() * 0.8
         }))
     }, [])
 
@@ -357,7 +357,7 @@ export const StoryAnimation = () => {
             let intensity = 15 * (1 - fadePhase)
             lightRef.current.intensity = Math.max(0, intensity)
 
-            let scale = 3.5 * (1 - fadePhase)
+            let scale = 2.0 * (1 - fadePhase)
 
             coreRef.current.scale.setScalar(Math.max(0, scale))
 

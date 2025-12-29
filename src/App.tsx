@@ -23,7 +23,14 @@ function App() {
       <Loader onStart={handleStart} started={started} />
       {started && <Header />}
 
-      <Canvas gl={{ antialias: false }} dpr={[1, 1.5]}>
+      <Canvas
+        gl={{ antialias: false }}
+        dpr={window.innerWidth < 768 ? [1, 1.2] : [1, 1.5]}
+        camera={{
+          fov: window.innerWidth < 768 ? 60 : 45,
+          position: [0, 0, 5]
+        }}
+      >
         <color attach="background" args={['#000000']} />
         <Suspense fallback={null}>
           <ScrollControls pages={5} damping={0.3}>
