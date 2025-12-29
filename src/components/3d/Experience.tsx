@@ -13,7 +13,7 @@ export const Experience = () => {
         // Page 1: Center
         // Page 2: Move Left
         // Page 3: Move Right
-        const r1 = scroll.range(0, 1 / 3);
+
         const r2 = scroll.range(1 / 3, 1 / 3);
         const r3 = scroll.range(2 / 3, 1 / 3);
 

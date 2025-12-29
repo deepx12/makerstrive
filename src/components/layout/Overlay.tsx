@@ -1,7 +1,6 @@
-import { useRef } from 'react';
-import { useScroll } from '@react-three/drei';
+import type { ReactNode } from 'react';
 
-const Section = ({ children, className = "" }: { children: React.ReactNode, className?: string }) => (
+const Section = ({ children, className = "" }: { children: ReactNode, className?: string }) => (
     <section className={`h-screen w-full flex flex-col justify-center px-10 max-w-7xl mx-auto ${className}`}>
         {children}
     </section>

@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { MeshDistortMaterial, Sphere, Wireframe } from '@react-three/drei';
+import { MeshDistortMaterial, Sphere } from '@react-three/drei';
 import * as THREE from 'three';
 import { useScroll } from '@react-three/drei';
 

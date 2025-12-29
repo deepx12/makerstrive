@@ -50,7 +50,7 @@ export const Rocks = ({ count = 100 }) => {
     // Optimize: Update individual matrices every frame for "tumbling" effect
     // Note: InstancedMesh + useFrame loop can be expensive for thousands of objects, 
     // but for < 500 rocks it is performant on modern devices.
-    useFrame((state, delta) => {
+    useFrame((state, _delta) => {
         if (!meshRef.current) return
 
         const dummy = new THREE.Object3D()

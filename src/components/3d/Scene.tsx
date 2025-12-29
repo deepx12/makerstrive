@@ -27,7 +27,7 @@ export const Scene = () => {
                 </ScrollControls>
 
                 {/* Post Processing */}
-                <EffectComposer disableNormalPass>
+                <EffectComposer enableNormalPass={false}>
                     <Bloom luminanceThreshold={1} mipmapBlur intensity={1.5} radius={0.6} />
                     <Noise opacity={0.05} />
                     <Vignette eskil={false} offset={0.1} darkness={0.9} />

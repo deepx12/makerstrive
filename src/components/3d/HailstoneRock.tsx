@@ -1,7 +1,6 @@
 import { useRef, useMemo } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
-import { useScroll } from '@react-three/drei';
 
 // GLSL Noise functions
 const noiseGLSL = `
@@ -148,7 +147,6 @@ void main() {
 
 export const HailstoneRock = () => {
   const meshRef = useRef<THREE.Mesh>(null);
-  const scroll = useScroll();
 
   // Uniforms
   const uniforms = useMemo(
